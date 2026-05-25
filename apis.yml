@@ -1,0 +1,191 @@
+aid: ecologi
+name: Ecologi
+description: >-
+  Ecologi is a Bristol, UK climate action platform and B Corp founded in 2019
+  that lets individuals and businesses fund verified reforestation, carbon
+  avoidance, carbon removal, and habitat restoration projects through monthly
+  subscriptions, pay-as-you-go purchases, and a public Impact API. The platform
+  has funded over 95 million trees, avoided 4.1 million tonnes of CO2e, removed
+  61,000 tonnes of CO2e, and restored 102,000 square metres of habitat across
+  projects in Guatemala, Brazil, Kenya, Uganda, India, Pakistan, the UK, and
+  beyond. Ecologi serves over 16,000 businesses with an end-to-end Measure,
+  Reduce, Report (3Rs) workflow aligned to SBTi, GHG Protocol, ISO 14064-1,
+  SECR, and CSRD, and exposes a public REST API (and a Zapier app and Shopify
+  app) so any business can automate climate impact per order, per signup, per
+  invoice, or per workflow event. The Impact API supports trees, local trees
+  (UK/US/AU/BR), carbon avoidance, carbon removal, and habitat restoration as
+  programmable purchases, with bearer-token auth, test mode, and idempotency
+  keys; a separate public Reporting API exposes any user account's impact
+  totals without authentication for embedding climate-positive badges.
+tags:
+  - Climate
+  - Climate Action
+  - Carbon Offsets
+  - Carbon Removal
+  - Carbon Avoidance
+  - Reforestation
+  - Tree Planting
+  - Habitat Restoration
+  - Sustainability
+  - ESG
+  - Net Zero
+  - B Corp
+  - Impact
+  - Verified Carbon
+  - Reporting
+  - Zapier
+  - Shopify
+  - Webhooks
+kind: contract
+image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+url: https://raw.githubusercontent.com/api-evangelist/ecologi/refs/heads/main/apis.yml
+created: '2026-05-24'
+modified: '2026-05-24'
+specificationVersion: '0.20'
+position: Consuming
+access: 3rd-Party
+apis:
+  - aid: ecologi:ecologi-impact-api
+    name: Ecologi Impact API
+    description: >-
+      The Impact API lets developers programmatically fund climate impact on
+      behalf of an Ecologi account. POST endpoints purchase trees, local trees
+      in specific countries (UK, US, AU, BR), carbon avoidance credits,
+      permanent carbon removals, and habitat restoration in square metres.
+      Requests authenticate with a Bearer token API key, support a "test"
+      flag for safe simulation, accept an Idempotency-Key header to make
+      retries safe, and can attribute purchases to a recipient via name and
+      recipientEmail. Purchases are aggregated and invoiced monthly with a
+      £3 minimum.
+    humanURL: https://docs.ecologi.com/
+    baseURL: https://public.ecologi.com
+    tags:
+      - Climate
+      - Impact
+      - Trees
+      - Carbon
+      - Habitat
+    properties:
+      - type: Documentation
+        url: https://docs.ecologi.com/
+      - type: Authentication
+        url: https://docs.ecologi.com/
+      - type: SignUp
+        url: https://ecologi.com/impact-api
+  - aid: ecologi:ecologi-reporting-api
+    name: Ecologi Reporting API
+    description: >-
+      The Reporting API exposes read-only impact totals for any public Ecologi
+      account by username. GET endpoints return total trees funded, CO2e
+      avoided, CO2e removed, habitat restored, and a combined impact summary.
+      No authentication is required and data refreshes every 10 minutes, making
+      it ideal for embedding climate-positive counters and badges on company
+      websites, dashboards, and apps.
+    humanURL: https://docs.ecologi.com/
+    baseURL: https://public.ecologi.com
+    tags:
+      - Climate
+      - Reporting
+      - Impact
+      - Public Data
+    properties:
+      - type: Documentation
+        url: https://docs.ecologi.com/
+common:
+  - type: Portal
+    url: https://ecologi.com
+  - type: Documentation
+    url: https://docs.ecologi.com/
+  - type: GettingStarted
+    url: https://ecologi.com/impact-api
+  - type: SignUp
+    url: https://ecologi.com/pay-as-you-go
+  - type: SignUp
+    url: https://ecologi.com/impact-api
+  - type: Support
+    url: https://help.ecologi.com/
+  - type: Documentation
+    url: https://help.ecologi.com/api-automation-overview
+  - type: Documentation
+    url: https://help.ecologi.com/api-integrations
+  - type: Documentation
+    url: https://help.ecologi.com/ecologi-api-and-integration-pricing
+  - type: Integrations
+    url: https://zapier.com/apps/ecologi/integrations
+    name: Ecologi on Zapier
+  - type: Integration
+    url: https://help.ecologi.com/which-apps-can-i-connect-to-ecologi-using-zapier
+    name: Apps connectable via Zapier
+  - type: Integration
+    url: https://help.ecologi.com/add-ecologi-to-a-shopify-store
+    name: Ecologi Shopify App
+  - type: Pricing
+    url: https://ecologi.com/pricing
+  - type: Plans
+    url: https://help.ecologi.com/ecologi-api-and-integration-pricing
+  - type: Blog
+    url: https://ecologi.com/articles
+  - type: Newsroom
+    url: https://ecologi.com/articles
+  - type: PrivacyPolicy
+    url: https://ecologi.com/privacy
+  - type: TermsOfService
+    url: https://ecologi.com/terms
+  - type: About
+    url: https://ecologi.com/about
+  - type: Business
+    url: https://ecologi.com/business
+  - type: Projects
+    url: https://ecologi.com/projects
+  - type: ImpactLedger
+    url: https://ecologi.com/projects
+    name: Public Impact Ledger
+  - type: GitHubOrganization
+    url: https://github.com/ecologi
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/ecologi/
+  - type: Twitter
+    url: https://twitter.com/ecologi_hq
+  - type: Instagram
+    url: https://www.instagram.com/ecologi/
+  - type: YouTube
+    url: https://www.youtube.com/@ecologi
+  - type: Contact
+    url: https://ecologi.com/contact
+  - type: Careers
+    url: https://ecologi.com/careers
+  - type: Features
+    data:
+      - Public Impact API with five POST endpoints — trees, local-trees, carbon, carbon-removal, habitat-restoration
+      - Public Reporting API with five GET endpoints exposing per-user impact totals (refreshed every 10 minutes)
+      - Bearer-token authentication on the Impact API, no auth required on the Reporting API
+      - Test mode via "test": true for safe simulation without charges
+      - Idempotency-Key header support for safe automatic retries
+      - Recipient attribution on every purchase (name + recipientEmail) for gifting impact
+      - Local-tree planting in the UK, US, Australia, and Brazil
+      - Carbon purchases in KG or Tonnes units
+      - Permanent carbon-removal purchases backed by verified registries
+      - Habitat restoration purchases in square metres
+      - Zapier app (Plant Trees, Buy Carbon Offsets) connecting WooCommerce, Stripe, Mailchimp, and thousands of others
+      - Shopify app supporting per-product, per-order, percentage-of-order, and Shopify Flow triggers
+      - Monthly invoicing with a £3 minimum threshold
+      - Public Impact Ledger with verified registry links and certificates for every project
+      - 3Rs framework (Reduce, Restore, Report) aligned with SBTi, GHG Protocol, ISO 14064-1, SECR, and CSRD
+      - Carbon Project Assessment Framework (CPAF) and Nature Project Assessment Framework (NPAF)
+      - B Corp certified (top 5% for governance and environment) and B Corp of the Year at 2026 edie Awards
+      - Over 95M trees funded, 4.1M tonnes CO2e avoided, 61k tonnes CO2e removed, 102k m2 habitat restored
+      - Climate-positive badge and embeddable impact widgets for business websites
+      - End-to-end emissions measurement, reduction, and reporting for 16,000+ businesses
+    sources:
+      - https://ecologi.com
+      - https://ecologi.com/about
+      - https://docs.ecologi.com/
+      - https://help.ecologi.com/api-automation-overview
+      - https://help.ecologi.com/api-integrations
+      - https://help.ecologi.com/ecologi-api-and-integration-pricing
+    updated: '2026-05-24'
+maintainers:
+  - FN: Kin Lane
+    email: info@apievangelist.com
+    X: apievangelist
+    url: https://apievangelist.com

@@ -70,7 +70,7 @@ apis:
         url: https://docs.ecologi.com/
       - type: Authentication
         url: https://docs.ecologi.com/
-      - type: SignUp
+      - type: Signup
         url: https://ecologi.com/impact-api
   - aid: ecologi:ecologi-reporting-api
     name: Ecologi Reporting API
@@ -98,9 +98,9 @@ common:
     url: https://docs.ecologi.com/
   - type: GettingStarted
     url: https://ecologi.com/impact-api
-  - type: SignUp
+  - type: Signup
     url: https://ecologi.com/pay-as-you-go
-  - type: SignUp
+  - type: Signup
     url: https://ecologi.com/impact-api
   - type: Support
     url: https://help.ecologi.com/
@@ -113,10 +113,10 @@ common:
   - type: Integrations
     url: https://zapier.com/apps/ecologi/integrations
     name: Ecologi on Zapier
-  - type: Integration
+  - type: Integrations
     url: https://help.ecologi.com/which-apps-can-i-connect-to-ecologi-using-zapier
     name: Apps connectable via Zapier
-  - type: Integration
+  - type: Integrations
     url: https://help.ecologi.com/add-ecologi-to-a-shopify-store
     name: Ecologi Shopify App
   - type: Pricing

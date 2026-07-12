@@ -92,6 +92,10 @@ apis:
       - type: Documentation
         url: https://docs.ecologi.com/
 common:
+  - type: VulnerabilityDisclosure
+    url: security/ecologi-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/ecologi-domain-security.yml
   - type: Portal
     url: https://ecologi.com
   - type: Documentation

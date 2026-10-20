@@ -1,5 +1,30 @@
 generated: '2026-10-15'
 edges:
+- partner_name: CDR.fyi
+  partner: null
+  partner_match: register
+  type: register
+  channel: standard-directory
+  relationship: standard-participant
+  direction: third-party
+  evidence: https://www.cdr.fyi/supplier/ecologi
+  category: Carbon removal supplier
+  contract_reference:
+    register: CDR.fyi supplier pages (cdr.fyi/supplier/<slug>)
+    spec_file: null
+    standard: Durable carbon dioxide removal (CDR.fyi tracker)
+    role: cdr-fyi-tracked-supplier
+    registered_name: Ecologi
+    website: https://ecologi.com/
+    matched_domain: ecologi.com
+    matched_by: domain
+    identity_source: the supplier website stated on its CDR.fyi page (no lookup)
+    signal_note: 'participation only: a third-party tracker of CDR orders and deliveries certifies nothing; tonnes,
+      orders and purchasers are never recorded (purchasers are buyers: held)'
+    detected_by: sweep-carbon-environment.py
+    detected: '2026-10-19'
+  detected_by: sweep-carbon-environment.py
+  first_seen: '2026-10-19'
 - partner_name: Zapier
   partner: zapier
   partner_match: aggregator
@@ -33,7 +58,7 @@ edges:
   channel: open-source-node
   relationship: ipaas-bridge
   direction: third-party
-  evidence: https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/ecologi
+  evidence: https://github.com/PipedreamHQ/pipedream/tree/d5872355ef27b4efa769f05352f2820c299a456e/components/ecologi
   category: null
   contract_reference:
     register: Pipedream components (PipedreamHQ/pipedream components/)
@@ -51,35 +76,11 @@ edges:
     builder: Pipedream repo (component)
   detected_by: sweep-workflow-automation.py
   first_seen: '2026-10-15'
-- partner_name: CDR.fyi
-  partner: null
-  partner_match: register
-  type: register
-  channel: standard-directory
-  relationship: standard-participant
-  direction: third-party
-  evidence: https://www.cdr.fyi/supplier/ecologi
-  category: Carbon removal supplier
-  contract_reference:
-    register: CDR.fyi supplier pages (cdr.fyi/supplier/<slug>)
-    spec_file: null
-    standard: Durable carbon dioxide removal (CDR.fyi tracker)
-    role: cdr-fyi-tracked-supplier
-    registered_name: Ecologi
-    website: https://ecologi.com/
-    matched_domain: ecologi.com
-    matched_by: domain
-    identity_source: the supplier website stated on its CDR.fyi page (no lookup)
-    signal_note: 'participation only: a third-party tracker of CDR orders and deliveries certifies nothing; tonnes,
-      orders and purchasers are never recorded (purchasers are buyers: held)'
-    detected_by: sweep-carbon-environment.py
-    detected: '2026-10-19'
-  detected_by: sweep-carbon-environment.py
-  first_seen: '2026-10-19'
 method: searched
 checked:
 - https://edge.isometric.com/graphql
 - https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/
+- https://github.com/PipedreamHQ/pipedream/tree/d5872355ef27b4efa769f05352f2820c299a456e/components/
 - https://public-api.goldstandard.org/projects?page=1&size=100
 - https://puro.earth/puro_facility-sitemap.xml
 - https://rcrapublic.epa.gov/rcra-public-export/rest/api/v1/public/export/current/CSV

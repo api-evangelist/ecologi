@@ -1,4 +1,4 @@
-# ecologi
+# Ecologi
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Ecologi — UK B Corp climate action platform funding verified tree planting, carbon avoidance, carbon removal, and habitat restoration through monthly subscriptions, a Shopify app, a Zapier app, and a public Impact API + Reporting API at `https://public.ecologi.com`.
+Ecologi is a Bristol, UK climate action platform and B Corp founded in 2019 that lets individuals and businesses fund verified reforestation, carbon avoidance, carbon removal, and habitat restoration projects through monthly subscriptions, pay-as-you-go purchases, and a public Impact API. The platform has funded over 95 million trees, avoided 4.1 million tonnes of CO2e, removed 61,000 tonnes of CO2e, and restored 102,000 square metres of habitat across projects in Guatemala, Brazil, Kenya, Uganda, India, Pakistan, the UK, and beyond. Ecologi serves over 16,000 businesses with an end-to-end Measure, Reduce, Report (3Rs) workflow aligned to SBTi, GHG Protocol, ISO 14064-1, SECR, and CSRD, and exposes a public REST API (and a Zapier app and Shopify app) so any business can automate climate impact per order, per signup, per invoice, or per workflow event. The Impact API supports trees, local trees (UK/US/AU/BR), carbon avoidance, carbon removal, and habitat restoration as programmable purchases, with bearer-token auth, test mode, and idempotency keys; a separate public Reporting API exposes any user account's impact totals without authentication for embedding climate-positive badges.
+
+**Areas:** Climate · Climate Action · Carbon Offsets · Carbon Removal · Carbon Avoidance · Reforestation · Tree Planting · Habitat Restoration · Sustainability · ESG · Net Zero · B Corp
+
+## Ecologi on APIs.io
+
+Everything profiled for Ecologi is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/ecologi/](https://apis.io/providers/ecologi/)** — or go straight to one of the APIs or properties below.
+
+### APIs (2)
+
+- [Ecologi Impact API](https://apis.io/apis/ecologi/ecologi-impact-api/) — The Impact API lets developers programmatically fund climate impact on behalf of an Ecologi account. POST endpoints purchase trees, local trees in specific…
+- [Ecologi Reporting API](https://apis.io/apis/ecologi/ecologi-reporting-api/) — The Reporting API exposes read-only impact totals for any public Ecologi account by username. GET endpoints return total trees funded, CO2e avoided, CO2e…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Ecologi Domain Security](https://apis.io/security/ecologi/ecologi-domain-security/)
+- [Ecologi Vulnerability Disclosure](https://apis.io/security/ecologi/ecologi-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.ecologi.com/)
+- [Documentation](https://docs.ecologi.com/)
+- [Getting started](https://ecologi.com/impact-api)
+- [Pricing](https://ecologi.com/pricing)
+- [Support](https://help.ecologi.com/)
+- [Blog](https://ecologi.com/articles)
+- [Terms of service](https://ecologi.com/terms)
+- [Privacy policy](https://ecologi.com/privacy)
+- [GitHub](https://github.com/ecologi)
+
+## API Evangelist rating
+
+**Kin Score 19.5** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 66.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 13.2 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 17.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/ecologi/](https://apis.io/providers/ecologi/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Ecologi: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/ecologi/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
